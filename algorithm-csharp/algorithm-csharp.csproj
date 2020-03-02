@@ -45,13 +45,22 @@
   <ItemGroup>
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
     <Compile Include="LeetCode\BinarySearch\SearchInRotatedSortedArray.cs" />
+    <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="LeetCode\Tree\Traversal\Inorder\BinaryTreeInorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\Traversal\Levelorder\BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\Traversal\Postorder\BinaryTreePostorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\Traversal\Preorder\BinaryTreePreorderTraversal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="LeetCode\Graph\2D Map BFS\" />
+    <Folder Include="LeetCode\OODesign\" />
+    <Folder Include="LeetCode\Tree\Balanced\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
