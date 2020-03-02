@@ -38,30 +38,30 @@ namespace algorithm_csharp
         {
             if (right < 0) return -1;
             if (left >= right) return nums[right] == target ? right : -1;
-            int midle = (left + right) / 2;
-            if (nums[midle] == target) return midle;
+            int _midle = (left + right) / 2;
+            if (nums[_midle] == target) return _midle;
             if (nums[right] > nums[left])       // no rotated
             {
-                if (nums[midle] < target)
-                    return binarySearch(nums, midle + 1, right, target);
+                if (nums[_midle] < target)
+                    return binarySearch(nums, _midle + 1, right, target);
                 else                
-                    return binarySearch(nums, left, midle - 1, target);
+                    return binarySearch(nums, left, _midle - 1, target);
             }
             else                                // has rotated
             {
-                if (nums[midle] <= nums[right]) // rotated point at left
+                if (nums[_midle] <= nums[right]) // rotated point at left
                 {
-                    if (nums[midle] <= target && target <= nums[right])
-                        return binarySearch(nums, midle + 1, right, target); //find right
+                    if (nums[_midle] <= target && target <= nums[right])
+                        return binarySearch(nums, _midle + 1, right, target); //find right
                     else
-                        return binarySearch(nums, left, midle - 1, target);  //find left
+                        return binarySearch(nums, left, _midle - 1, target);  //find left
                 }
                 else                           // rotated point at right => nums[midle] > nums[right]
                 {
-                    if (nums[left] <= target && target < nums[midle])
-                        return binarySearch(nums, left, midle - 1, target);  //find left
+                    if (nums[left] <= target && target < nums[_midle])
+                        return binarySearch(nums, left, _midle - 1, target);  //find left
                     else
-                        return binarySearch(nums, midle + 1, right, target); //find right
+                        return binarySearch(nums, _midle + 1, right, target); //find right
                 }
             }
         }
