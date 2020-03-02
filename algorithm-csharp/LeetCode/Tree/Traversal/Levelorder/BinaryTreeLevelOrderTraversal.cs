@@ -1,5 +1,5 @@
 ﻿/* https://leetcode.com/problems/binary-tree-level-order-traversal/
- * Runtime: 248 ms, faster than 51.54% of C# online submissions for Binary Tree Level Order Traversal.
+ * Runtime: 240 ms, faster than 84.81% of C# online submissions for Binary Tree Level Order Traversal.
  * Memory Usage: 31 MB, less than 20.00% of C# online submissions for Binary Tree Level Order Traversal.
  * 
  * use queue to keep current level and next level nodes
