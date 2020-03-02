@@ -10,6 +10,8 @@ namespace algorithm_csharp
     {
         static void Main(string[] args)
         {
+            SearchInRotatedSortedArray solution = new SearchInRotatedSortedArray();
+
         }
     }
 }
