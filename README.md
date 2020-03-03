@@ -1,6 +1,7 @@
 # algorithm-csharp
 
 [Quick link to leetcode solving records directories](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode)
+
 Or using category below to view source code
 
 Total questions commit on github: 8 , total solved on leetcode: 77
