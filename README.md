@@ -9,6 +9,8 @@ Total questions commit on github: 10 , total solved on leetcode: 79
 ### [Linked List](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/LinkedList)
 Solved Q206 basic linked list issue "reverse"
 
+### Array
+### String => char array
 ### Stack
 ### Queue
 ### Hash Set
