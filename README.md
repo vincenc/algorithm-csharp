@@ -13,6 +13,8 @@ Solved Q635 "LogSystem" this solution created a DateRegion class to cover clearl
 Solved Q206 basic linked list issue "reverse"
 
 ### Array
+Solved Q15 "Three Sum" using a sorted array to move two index from left(smallest)  and from right(largest)
+
 ### String => char array
 ### Stack
 ### Queue
