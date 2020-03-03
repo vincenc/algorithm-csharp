@@ -20,7 +20,7 @@ Solved Q33 "Search In Rotated Sorted Array" by binary search
 Solved Q280 "Wiggle Sort" by quick Sort¡Bmerge Sort¡Bheap Sort
 
 ### Tree
-### [Traversal](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Tree/Traversal)
+#### [Traversal](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Tree/Traversal)
 Solved basic traversal problems Q94,102,144,145
 
 ### [Graph](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Graph)
