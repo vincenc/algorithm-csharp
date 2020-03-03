@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
     <Compile Include="LeetCode\BinarySearch\SearchInRotatedSortedArray.cs" />
+    <Compile Include="LeetCode\Graph\2D Map BFS\WallsGates.cs" />
     <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="LeetCode\Sort\Wiggle_Sort.cs" />
     <Compile Include="LeetCode\Tree\Traversal\Inorder\BinaryTreeInorderTraversal.cs" />
     <Compile Include="LeetCode\Tree\Traversal\Levelorder\BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="LeetCode\Tree\Traversal\Postorder\BinaryTreePostorderTraversal.cs" />
@@ -57,7 +59,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="LeetCode\Graph\2D Map BFS\" />
     <Folder Include="LeetCode\OODesign\" />
     <Folder Include="LeetCode\Tree\Balanced\" />
   </ItemGroup>
