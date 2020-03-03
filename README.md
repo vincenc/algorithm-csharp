@@ -19,6 +19,9 @@ Solved Q33 "Search In Rotated Sorted Array" by binary search
 ### [Sort](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Sort)
 Solved Q280 "Wiggle Sort" by quick Sort¡Bmerge Sort¡Bheap Sort
 
+### [BackTracking](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/BackTracking)
+Solved Q84 "Subsets" gen every subsets by backtracking recursively
+
 ### Tree
 #### [Traversal](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Tree/Traversal)
 Solved basic traversal problems Q94,102,144,145
