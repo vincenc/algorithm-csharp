@@ -4,7 +4,10 @@
 
 Or using category below to view source code
 
-Total questions commit on github: 10 , total solved on leetcode: 79
+Total questions commit on github: 11 , total solved on leetcode: 80
+
+### [Design](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/Design)
+Solved Q635 "LogSystem" this solution created a DateRegion class to cover clearly the start time shift and end time shift logic for filtering data
 
 ### [Linked List](https://github.com/vincenc/algorithm-csharp/tree/master/algorithm-csharp/LeetCode/LinkedList)
 Solved Q206 basic linked list issue "reverse"
