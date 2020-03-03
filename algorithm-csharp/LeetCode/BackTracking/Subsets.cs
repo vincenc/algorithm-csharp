@@ -27,8 +27,7 @@ namespace algorithm_csharp
         }
 
         private void backTrack(List<IList<int>> result, List<int> path, int[] nums, int index)
-        {
-            //if (index > nums.Length)    //if just want full length path ,add this if
+        {            
             result.Add(new List<int>(path));
 
             for (int i = index; i < nums.Length; i++)

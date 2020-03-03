@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeetCode\BackTracking\Permutations.cs" />
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
     <Compile Include="LeetCode\BinarySearch\SearchInRotatedSortedArray.cs" />
     <Compile Include="LeetCode\Graph\2D Map BFS\WallsGates.cs" />
