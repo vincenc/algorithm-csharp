@@ -48,6 +48,7 @@
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
     <Compile Include="LeetCode\BinarySearch\SearchInRotatedSortedArray.cs" />
     <Compile Include="LeetCode\Design\LogSystem.cs" />
+    <Compile Include="LeetCode\DP\BestTimeToBuyAndSellStock.cs" />
     <Compile Include="LeetCode\Graph\2D Map BFS\WallsGates.cs" />
     <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
     <Compile Include="LeetCode\Sort\Wiggle_Sort.cs" />
