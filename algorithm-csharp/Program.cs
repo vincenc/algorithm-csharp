@@ -10,13 +10,17 @@ namespace algorithm_csharp
     {
         static void Main(string[] args)
         {
-            BestTimeToBuyAndSellStock test = new BestTimeToBuyAndSellStock();
-            Console.WriteLine(test.MaxProfit(new Int32[] { }));
-            Console.WriteLine(test.MaxProfit(null));
-            Console.WriteLine(test.MaxProfit(new Int32[] { 7, 1, 5, 3, 6, 4 }));
-            Console.WriteLine(test.MaxProfit(new Int32[] { 0, 1, 5, 3, 6, 9 }));
-            Console.WriteLine(test.MaxProfit(new Int32[] { 3, 2, 1, 3, 6, 9 }));
-            Console.WriteLine(test.MaxProfit(new Int32[] { 3, 2, 1, 9, 6, 0 }));
+            MaximumSubarray test = new MaximumSubarray();
+            Console.WriteLine(test.MaxSubArray(new Int32[] { }));
+            Console.WriteLine(test.MaxSubArray(null));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -2, 1, -3, 4, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { 2, 2, -3, 4, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -1, 2, -3, 4, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -1, -2, -3, -4, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -1, -2, -3, 0, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -1, -2, 9, 0, -1 }));
+            Console.WriteLine(test.MaxSubArray(new Int32[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 }));
+
 
             Console.ReadKey();
 
