@@ -53,6 +53,7 @@
     <Compile Include="LeetCode\DP\MaximumSubarray.cs" />
     <Compile Include="LeetCode\Graph\2D Map BFS\WallsGates.cs" />
     <Compile Include="LeetCode\LinkedList\ReverseLinkedList.cs" />
+    <Compile Include="LeetCode\Sort\SortColor.cs" />
     <Compile Include="LeetCode\Sort\Wiggle_Sort.cs" />
     <Compile Include="LeetCode\Tree\Traversal\Inorder\BinaryTreeInorderTraversal.cs" />
     <Compile Include="LeetCode\Tree\Traversal\Levelorder\BinaryTreeLevelOrderTraversal.cs" />
