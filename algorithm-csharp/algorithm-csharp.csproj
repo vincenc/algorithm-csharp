@@ -47,6 +47,7 @@
     <Compile Include="LeetCode\BackTracking\Permutations.cs" />
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
     <Compile Include="LeetCode\BinarySearch\FindMinimumInRotatedSortedArray.cs" />
+    <Compile Include="LeetCode\BinarySearch\FindMinimumInRotatedSortedArrayII.cs" />
     <Compile Include="LeetCode\BinarySearch\SearchInRotatedSortedArray.cs" />
     <Compile Include="LeetCode\Design\LogSystem.cs" />
     <Compile Include="LeetCode\DP\BestTimeToBuyAndSellStock.cs" />
