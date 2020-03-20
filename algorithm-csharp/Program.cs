@@ -10,86 +10,141 @@ namespace algorithm_csharp
     {
         static void Main(string[] args)
         {
-            MedianOfTwoSortedArrays test = new MedianOfTwoSortedArrays();
-            //int[] test1 = new Int32[] { };
-            //Console.WriteLine(test.FindMin(test1));
+            WildcardMatching test = new WildcardMatching();
+            Console.WriteLine(test.IsMatch("adceb","*a*b"));
+            //short  s or p lengh = 0 , 1 , 2 ,3
+            Console.WriteLine(test.IsMatch("aaaabaabaabbbabaabaabbbbaabaaabaaabbabbbaaabbbbbbabababbaabbabbbbaababaaabbbababbbaabbbaabbaaabbbaabbbbbaaaabaaabaabbabbbaabababbaabbbabababbaabaaababbbbbabaababbbabbabaaaaaababbbbaabbbbaaababbbbaabbbbb",
+                "**a*b*b**b*b****bb******b***babaab*ba*a*aaa***baa****b***bbbb*bbaa*a***a*a*****a*b*a*a**ba***aa*a**a*"));
+            Console.WriteLine(test.IsMatch("a", "a*"));
+            Console.WriteLine(test.IsMatch("aa","*"));
+            Console.WriteLine(test.IsMatch("ab", "*?*?*"));
+            Console.WriteLine(test.IsMatch("abbabbbaabaaabbbbbabbabbabbbabbaaabbbababbabaaabbab",
+                "*aabb***aa**a******aa*"));
+            Console.WriteLine(test.IsMatch("", "*"));
+            Console.WriteLine(test.IsMatch("", "a"));
+            Console.WriteLine(test.IsMatch("a", ""));
+            Console.WriteLine(test.IsMatch(null, "a"));
+            Console.WriteLine(test.IsMatch("a", null));
+            Console.WriteLine(test.IsMatch("", "aa"));
+            Console.WriteLine(test.IsMatch("aa", ""));
+            Console.WriteLine(test.IsMatch(null, "aa"));
+            Console.WriteLine(test.IsMatch("aa", null));
+            Console.WriteLine(test.IsMatch("aa", "a"));
+            Console.WriteLine(test.IsMatch("aa", "aa"));
+            Console.WriteLine(test.IsMatch("aa", "aaa"));
+            Console.WriteLine(test.IsMatch("a", "a"));
+            Console.WriteLine(test.IsMatch("a", "aa"));
+            Console.WriteLine(test.IsMatch("a", "aaa"));
+            Console.WriteLine(test.IsMatch("aa", "a"));
+            Console.WriteLine(test.IsMatch("aa", "aa"));
+            Console.WriteLine(test.IsMatch("aa", "aaa"));            
+            Console.WriteLine(test.IsMatch("aa", "a"));
+            Console.WriteLine(test.IsMatch("aaa", "a"));
+            Console.WriteLine(test.IsMatch("a", "aa"));            
+            Console.WriteLine(test.IsMatch("aaa", "aa"));
+            Console.WriteLine(test.IsMatch("a", "aaa"));
+            Console.WriteLine(test.IsMatch("aa", "aaa"));
 
-            //int[] test2 = null;
-            //Console.WriteLine(test.FindMin(test2));
+            //star position  index = 0, -1  or continous star  or all star
+            Console.WriteLine(test.IsMatch("aa", "*aa"));
+            Console.WriteLine(test.IsMatch("aa", "a*a"));
+            Console.WriteLine(test.IsMatch("aa", "aa*"));
+            Console.WriteLine(test.IsMatch("aa", "*"));
+            Console.WriteLine(test.IsMatch("aa", "**"));
+            Console.WriteLine(test.IsMatch("aa", "***"));
+            Console.WriteLine(test.IsMatch("aa", "*a"));
+            Console.WriteLine(test.IsMatch("aa", "a*"));
+            Console.WriteLine(test.IsMatch("aa", "*b"));
+            Console.WriteLine(test.IsMatch("aa", "b*"));
+            Console.WriteLine(test.IsMatch("aaa", "*aa"));
+            Console.WriteLine(test.IsMatch("aaa", "a*a"));
+            Console.WriteLine(test.IsMatch("aaa", "aa*"));
+            Console.WriteLine(test.IsMatch("aaa", "*"));
+            Console.WriteLine(test.IsMatch("aaa", "**"));
+            Console.WriteLine(test.IsMatch("aaa", "***"));
+            Console.WriteLine(test.IsMatch("aaa", "*a"));
+            Console.WriteLine(test.IsMatch("aaa", "a*"));
+            Console.WriteLine(test.IsMatch("aaa", "*b"));
+            Console.WriteLine(test.IsMatch("aaa", "b*"));
+            Console.WriteLine(test.IsMatch("ab", "*aa"));
+            Console.WriteLine(test.IsMatch("ab", "a*a"));
+            Console.WriteLine(test.IsMatch("ab", "aa*"));
+            Console.WriteLine(test.IsMatch("ab", "*"));
+            Console.WriteLine(test.IsMatch("ab", "**"));
+            Console.WriteLine(test.IsMatch("ab", "***"));
+            Console.WriteLine(test.IsMatch("ab", "*a"));
+            Console.WriteLine(test.IsMatch("ab", "a*"));
+            Console.WriteLine(test.IsMatch("ab", "*b"));
+            Console.WriteLine(test.IsMatch("ab", "b*"));
+            Console.WriteLine(test.IsMatch("a", "*aa"));
+            Console.WriteLine(test.IsMatch("a", "a*a"));
+            Console.WriteLine(test.IsMatch("a", "aa*"));
+            Console.WriteLine(test.IsMatch("a", "*"));
+            Console.WriteLine(test.IsMatch("a", "**"));
+            Console.WriteLine(test.IsMatch("a", "***"));
+            Console.WriteLine(test.IsMatch("a", "*a"));
+            Console.WriteLine(test.IsMatch("a", "a*"));
+            Console.WriteLine(test.IsMatch("a", "*b"));
+            Console.WriteLine(test.IsMatch("a", "b*"));
 
+            //? position index = 0 , -1 or continous ? or all ?
+            Console.WriteLine(test.IsMatch("aa", "?aa"));
+            Console.WriteLine(test.IsMatch("aa", "a?a"));
+            Console.WriteLine(test.IsMatch("aa", "aa?"));
+            Console.WriteLine(test.IsMatch("aa", "?"));
+            Console.WriteLine(test.IsMatch("aa", "??"));
+            Console.WriteLine(test.IsMatch("aa", "???"));
+            Console.WriteLine(test.IsMatch("aa", "?a"));
+            Console.WriteLine(test.IsMatch("aa", "a?"));
+            Console.WriteLine(test.IsMatch("aa", "?b"));
+            Console.WriteLine(test.IsMatch("aa", "b?"));
+            Console.WriteLine(test.IsMatch("aaa", "?aa"));
+            Console.WriteLine(test.IsMatch("aaa", "a?a"));
+            Console.WriteLine(test.IsMatch("aaa", "aa?"));
+            Console.WriteLine(test.IsMatch("aaa", "?"));
+            Console.WriteLine(test.IsMatch("aaa", "??"));
+            Console.WriteLine(test.IsMatch("aaa", "???"));
+            Console.WriteLine(test.IsMatch("aaa", "?a"));
+            Console.WriteLine(test.IsMatch("aaa", "a?"));
+            Console.WriteLine(test.IsMatch("aaa", "?b"));
+            Console.WriteLine(test.IsMatch("aaa", "b?"));
+            Console.WriteLine(test.IsMatch("ab", "?aa"));
+            Console.WriteLine(test.IsMatch("ab", "a?a"));
+            Console.WriteLine(test.IsMatch("ab", "aa?"));
+            Console.WriteLine(test.IsMatch("ab", "?"));
+            Console.WriteLine(test.IsMatch("ab", "??"));
+            Console.WriteLine(test.IsMatch("ab", "???"));
+            Console.WriteLine(test.IsMatch("ab", "?a"));
+            Console.WriteLine(test.IsMatch("ab", "a?"));
+            Console.WriteLine(test.IsMatch("ab", "?b"));
+            Console.WriteLine(test.IsMatch("ab", "b?"));
+            Console.WriteLine(test.IsMatch("a", "?aa"));
+            Console.WriteLine(test.IsMatch("a", "a?a"));
+            Console.WriteLine(test.IsMatch("a", "aa?"));
+            Console.WriteLine(test.IsMatch("a", "?"));
+            Console.WriteLine(test.IsMatch("a", "??"));
+            Console.WriteLine(test.IsMatch("a", "???"));
+            Console.WriteLine(test.IsMatch("a", "?a"));
+            Console.WriteLine(test.IsMatch("a", "a?"));
+            Console.WriteLine(test.IsMatch("a", "?b"));
+            Console.WriteLine(test.IsMatch("a", "b?"));
+            // p longer than s
+            Console.WriteLine(test.IsMatch("a", "a*"));
+            Console.WriteLine(test.IsMatch("a", "a?"));
+            Console.WriteLine(test.IsMatch("a", "ab"));
 
-            int[] test3 = new Int32[] { 1, 5, 9, 15, 18 };  //18
-            int[] test4 = new Int32[] { 2, 4, 20, 30, 40, 48, 49, 50 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
+            // s longer than p            
+            Console.WriteLine(test.IsMatch("aaa", "a*"));
+            Console.WriteLine(test.IsMatch("aaa", "a?"));
+            Console.WriteLine(test.IsMatch("aaa", "a"));
+            
+            //other            
+            Console.WriteLine(test.IsMatch("adceb", "*a*b"));
+            Console.WriteLine(test.IsMatch("adceb", "***"));
+            Console.WriteLine(test.IsMatch("adceb", "?**"));
+            Console.WriteLine(test.IsMatch("adceb", "?*c"));
+            Console.WriteLine(test.IsMatch("acdcb", "a*c?b"));
 
-            test3 = new Int32[] { 1, 5, 9, 15, 18, 19 };  //18.5
-            test4 = new Int32[] { 2, 4, 20, 30, 40, 48, 49, 50 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 56, 57, 58, 59, 60 };  //48.5
-            test4 = new Int32[] { 2, 4, 20, 30, 40, 48, 49 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 56, 57, 58, 59, 60, 61 };  //49
-            test4 = new Int32[] { 2, 4, 20, 30, 40, 48, 49 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 3 };  //2
-            test4 = new Int32[] { 2 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 2 }; //2.5
-            test4 = new Int32[] { 3, 4 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 2 }; //2.5
-            test4 = new Int32[] { 3, 4, 5, 6, 7 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 3 };  //2.5
-            test4 = new Int32[] { 2, 4 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 3, 5 };  //3
-            test4 = new Int32[] { 2, 4 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1 };  //1.5
-            test4 = new Int32[] { 2 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 0, 0 };  //1.5
-            test4 = new Int32[] { 0, 0 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 1 };  //1.5
-            test4 = new Int32[] { 1, 2 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 2, 2 };  //1.5
-            test4 = new Int32[] { 1, 2 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 2 };  //1.5
-            test4 = new Int32[] { 2, 2 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1 };  //1.5
-            test4 = new Int32[] { 1 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { };  //1.5
-            test4 = new Int32[] { 1 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-
-            test3 = new Int32[] { };  //1.5
-            test4 = new Int32[] { 2, 3 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
-
-            test3 = new Int32[] { 1, 1, 1 };  //1.5
-            test4 = new Int32[] { 1, 1, 1 };
-            Console.WriteLine(test.FindMedianSortedArrays(test3, test4));
             Console.ReadKey();
 
         }

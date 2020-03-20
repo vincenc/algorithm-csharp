@@ -46,6 +46,7 @@
     <Compile Include="LeetCode\Array\ThreeSumQuestion.cs" />
     <Compile Include="LeetCode\BackTracking\Permutations.cs" />
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />
+    <Compile Include="LeetCode\BackTracking\WildcardMatching.cs" />
     <Compile Include="LeetCode\BinarySearch\FindMinimumInRotatedSortedArray.cs" />
     <Compile Include="LeetCode\BinarySearch\FindMinimumInRotatedSortedArrayII.cs" />
     <Compile Include="LeetCode\BinarySearch\MedianOfTwoSortedArrays.cs" />
