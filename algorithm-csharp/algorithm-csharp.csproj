@@ -51,7 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeetCode\Array\ReverseWordsInAString.cs" />
+    <Compile Include="LeetCode\Array\ReverseWordsInAStringII.cs" />
+    <Compile Include="LeetCode\Array\SpiralMatrix.cs" />
     <Compile Include="LeetCode\Array\ThreeSumQuestion.cs" />
+    <Compile Include="LeetCode\Array\ValidPalindrome.cs" />
     <Compile Include="LeetCode\BackTracking\Permutations.cs" />
     <Compile Include="LeetCode\BackTracking\RegularExpressionMatching.cs" />
     <Compile Include="LeetCode\BackTracking\Subsets.cs" />

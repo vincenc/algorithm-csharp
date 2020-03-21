@@ -58,6 +58,10 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="LeetCode\Array\ReverseWordsInAStringIITests.cs" />
+    <Compile Include="LeetCode\Array\ReverseWordsInAStringTests.cs" />
+    <Compile Include="LeetCode\Array\SpiralMatrixTests.cs" />
+    <Compile Include="LeetCode\Array\ValidPalindromeTests.cs" />
     <Compile Include="LeetCode\BackTracking\RegularExpressionMatchingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
