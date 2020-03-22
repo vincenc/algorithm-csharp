@@ -63,6 +63,8 @@
     <Compile Include="LeetCode\Array\SpiralMatrixTests.cs" />
     <Compile Include="LeetCode\Array\ValidPalindromeTests.cs" />
     <Compile Include="LeetCode\BackTracking\RegularExpressionMatchingTests.cs" />
+    <Compile Include="LeetCode\LinkedList\AddTwoNumbersIITests.cs" />
+    <Compile Include="LeetCode\Tree\Traversal\Levelorder\PopulatingNextRightPointersinEachNodeIITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

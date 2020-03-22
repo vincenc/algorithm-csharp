@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace algorithm_csharp.LeetCode.Array.Tests
+namespace algorithm_csharp.Tests
 {
     [TestClass]
     public class ReverseWordsInAStringIITests

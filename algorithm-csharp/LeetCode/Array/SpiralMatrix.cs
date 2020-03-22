@@ -1,8 +1,13 @@
-﻿using System;
+﻿/*
+ * https://leetcode.com/problems/spiral-matrix/
+ * Runtime: 220 ms, faster than 100.00% of C# online submissions for Spiral Matrix.
+ * Memory Usage: 29.6 MB, less than 25.00% of C# online submissions for Spiral Matrix.
+ * 
+ * use direction status to decide path
+ * use x,y make a string to check visited
+ */
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace algorithm_csharp
 {
@@ -10,74 +15,66 @@ namespace algorithm_csharp
     {
         public IList<int> SpiralOrder(int[][] matrix)
         {
+            
             List<int> res = new List<int>();
-            int length = matrix.Sum(n => n.Length);
-            // status rightGo,downGo,leftGo,upGo
-            // turn point => edge, or already proceessed(by hash)
-            // if rightGo => turnDown
-            // if downGo => turnLeft
-            // if leftGo => turnUp
-            // if upGo => turnright
-            // end trigger m*n == length
+            if (matrix == null || matrix.Length == 0 || matrix[0].Length == 0) return res;
+             // end trigger m*n == length
+             int length = matrix.Length * matrix[0].Length;
             int indexX = 0;
             int indexY = 0;
             int status = 1; //1 rightGo , 2 downGo , 3 leftGo , 4 upGo
-            HashSet<int[]> visited = new HashSet<int[]>();
+            HashSet<string> visited = new HashSet<string>(); // turn point => edge, or already proceessed(by hash)
             while (res.Count < length)
             {
                 res.Add(matrix[indexX][indexY]);
-                visited.Add(new[] {indexX, indexY});
+                visited.Add($"{indexX.ToString()},{indexY.ToString()}");
                 switch (status)
                 {
-                    case 1: //1 rightGo
-                        if (indexY == matrix[indexX].Length - 1 || visited.Contains(new []{indexX,indexY}))
+                    case 1: //1 rightGo // if rightGo => turnDown
+                        if (indexY == matrix[indexX].Length - 1 || checkExist(indexX, indexY+1, visited))
                         {
+                            status = 2;
                             indexX++;
                         }
                         else
-                        {
                             indexY++;
-                        }                        
                         break;
-                    case 2: //2 downGo
-                        if (indexX == matrix.Length - 1)
+                    case 2: //2 downGo // if downGo => turnLeft
+                        if (indexX == matrix.Length - 1 || checkExist(indexX+1, indexY, visited))
                         {
+                            status = 3;
                             indexY--;
                         }
                         else
-                        {
                             indexX++;
-                        }
                         break;
-                    case 3: //3 leftGo
-                        if (indexY == 0)
+                    case 3: //3 leftGo // if leftGo => turnUp
+                        if (indexY == 0 || checkExist(indexX, indexY-1, visited))
                         {
+                            status = 4;
                             indexX--;
                         }
                         else
-                        {
                             indexY--;
-                        }
                         break;
-                    default: //4 upGo
-                        if (indexY == 0)
+                    default: //4 upGo // if upGo => turnright
+                        if (checkExist(indexX-1, indexY, visited))
                         {
-                            indexX--;
+                            status = 1;
+                            indexY++;
                         }
                         else
-                        {
-                            indexY--;
-                        }
+                            indexX--;
                         break;
                 }
             }
 
-            return new int[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 };
+            return res;
         }
 
-        private bool checkExist(int x, int y , HashSet<int[]> datas )
+        public bool checkExist(int x, int y, HashSet<string> datas)
         {
-            return false;
+            return datas.Contains($"{x.ToString()},{y.ToString()}");
         }
     }
 }

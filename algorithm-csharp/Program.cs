@@ -10,140 +10,20 @@ namespace algorithm_csharp
     {
         static void Main(string[] args)
         {
-            WildcardMatching test = new WildcardMatching();
-            Console.WriteLine(test.IsMatch("adceb","*a*b"));
-            //short  s or p lengh = 0 , 1 , 2 ,3
-            Console.WriteLine(test.IsMatch("aaaabaabaabbbabaabaabbbbaabaaabaaabbabbbaaabbbbbbabababbaabbabbbbaababaaabbbababbbaabbbaabbaaabbbaabbbbbaaaabaaabaabbabbbaabababbaabbbabababbaabaaababbbbbabaababbbabbabaaaaaababbbbaabbbbaaababbbbaabbbbb",
-                "**a*b*b**b*b****bb******b***babaab*ba*a*aaa***baa****b***bbbb*bbaa*a***a*a*****a*b*a*a**ba***aa*a**a*"));
-            Console.WriteLine(test.IsMatch("a", "a*"));
-            Console.WriteLine(test.IsMatch("aa","*"));
-            Console.WriteLine(test.IsMatch("ab", "*?*?*"));
-            Console.WriteLine(test.IsMatch("abbabbbaabaaabbbbbabbabbabbbabbaaabbbababbabaaabbab",
-                "*aabb***aa**a******aa*"));
-            Console.WriteLine(test.IsMatch("", "*"));
-            Console.WriteLine(test.IsMatch("", "a"));
-            Console.WriteLine(test.IsMatch("a", ""));
-            Console.WriteLine(test.IsMatch(null, "a"));
-            Console.WriteLine(test.IsMatch("a", null));
-            Console.WriteLine(test.IsMatch("", "aa"));
-            Console.WriteLine(test.IsMatch("aa", ""));
-            Console.WriteLine(test.IsMatch(null, "aa"));
-            Console.WriteLine(test.IsMatch("aa", null));
-            Console.WriteLine(test.IsMatch("aa", "a"));
-            Console.WriteLine(test.IsMatch("aa", "aa"));
-            Console.WriteLine(test.IsMatch("aa", "aaa"));
-            Console.WriteLine(test.IsMatch("a", "a"));
-            Console.WriteLine(test.IsMatch("a", "aa"));
-            Console.WriteLine(test.IsMatch("a", "aaa"));
-            Console.WriteLine(test.IsMatch("aa", "a"));
-            Console.WriteLine(test.IsMatch("aa", "aa"));
-            Console.WriteLine(test.IsMatch("aa", "aaa"));            
-            Console.WriteLine(test.IsMatch("aa", "a"));
-            Console.WriteLine(test.IsMatch("aaa", "a"));
-            Console.WriteLine(test.IsMatch("a", "aa"));            
-            Console.WriteLine(test.IsMatch("aaa", "aa"));
-            Console.WriteLine(test.IsMatch("a", "aaa"));
-            Console.WriteLine(test.IsMatch("aa", "aaa"));
+            //int[][] builds = new int[5][] {
+            //    new int []{ 19,24,8},
+            //    new int []{ 5,12,12},
+            //    new int []{ 2,9,10},
+            //    new int []{ 3,7,5},                
+            //    new int []{ 15,20,10}
 
-            //star position  index = 0, -1  or continous star  or all star
-            Console.WriteLine(test.IsMatch("aa", "*aa"));
-            Console.WriteLine(test.IsMatch("aa", "a*a"));
-            Console.WriteLine(test.IsMatch("aa", "aa*"));
-            Console.WriteLine(test.IsMatch("aa", "*"));
-            Console.WriteLine(test.IsMatch("aa", "**"));
-            Console.WriteLine(test.IsMatch("aa", "***"));
-            Console.WriteLine(test.IsMatch("aa", "*a"));
-            Console.WriteLine(test.IsMatch("aa", "a*"));
-            Console.WriteLine(test.IsMatch("aa", "*b"));
-            Console.WriteLine(test.IsMatch("aa", "b*"));
-            Console.WriteLine(test.IsMatch("aaa", "*aa"));
-            Console.WriteLine(test.IsMatch("aaa", "a*a"));
-            Console.WriteLine(test.IsMatch("aaa", "aa*"));
-            Console.WriteLine(test.IsMatch("aaa", "*"));
-            Console.WriteLine(test.IsMatch("aaa", "**"));
-            Console.WriteLine(test.IsMatch("aaa", "***"));
-            Console.WriteLine(test.IsMatch("aaa", "*a"));
-            Console.WriteLine(test.IsMatch("aaa", "a*"));
-            Console.WriteLine(test.IsMatch("aaa", "*b"));
-            Console.WriteLine(test.IsMatch("aaa", "b*"));
-            Console.WriteLine(test.IsMatch("ab", "*aa"));
-            Console.WriteLine(test.IsMatch("ab", "a*a"));
-            Console.WriteLine(test.IsMatch("ab", "aa*"));
-            Console.WriteLine(test.IsMatch("ab", "*"));
-            Console.WriteLine(test.IsMatch("ab", "**"));
-            Console.WriteLine(test.IsMatch("ab", "***"));
-            Console.WriteLine(test.IsMatch("ab", "*a"));
-            Console.WriteLine(test.IsMatch("ab", "a*"));
-            Console.WriteLine(test.IsMatch("ab", "*b"));
-            Console.WriteLine(test.IsMatch("ab", "b*"));
-            Console.WriteLine(test.IsMatch("a", "*aa"));
-            Console.WriteLine(test.IsMatch("a", "a*a"));
-            Console.WriteLine(test.IsMatch("a", "aa*"));
-            Console.WriteLine(test.IsMatch("a", "*"));
-            Console.WriteLine(test.IsMatch("a", "**"));
-            Console.WriteLine(test.IsMatch("a", "***"));
-            Console.WriteLine(test.IsMatch("a", "*a"));
-            Console.WriteLine(test.IsMatch("a", "a*"));
-            Console.WriteLine(test.IsMatch("a", "*b"));
-            Console.WriteLine(test.IsMatch("a", "b*"));
+            //};
 
-            //? position index = 0 , -1 or continous ? or all ?
-            Console.WriteLine(test.IsMatch("aa", "?aa"));
-            Console.WriteLine(test.IsMatch("aa", "a?a"));
-            Console.WriteLine(test.IsMatch("aa", "aa?"));
-            Console.WriteLine(test.IsMatch("aa", "?"));
-            Console.WriteLine(test.IsMatch("aa", "??"));
-            Console.WriteLine(test.IsMatch("aa", "???"));
-            Console.WriteLine(test.IsMatch("aa", "?a"));
-            Console.WriteLine(test.IsMatch("aa", "a?"));
-            Console.WriteLine(test.IsMatch("aa", "?b"));
-            Console.WriteLine(test.IsMatch("aa", "b?"));
-            Console.WriteLine(test.IsMatch("aaa", "?aa"));
-            Console.WriteLine(test.IsMatch("aaa", "a?a"));
-            Console.WriteLine(test.IsMatch("aaa", "aa?"));
-            Console.WriteLine(test.IsMatch("aaa", "?"));
-            Console.WriteLine(test.IsMatch("aaa", "??"));
-            Console.WriteLine(test.IsMatch("aaa", "???"));
-            Console.WriteLine(test.IsMatch("aaa", "?a"));
-            Console.WriteLine(test.IsMatch("aaa", "a?"));
-            Console.WriteLine(test.IsMatch("aaa", "?b"));
-            Console.WriteLine(test.IsMatch("aaa", "b?"));
-            Console.WriteLine(test.IsMatch("ab", "?aa"));
-            Console.WriteLine(test.IsMatch("ab", "a?a"));
-            Console.WriteLine(test.IsMatch("ab", "aa?"));
-            Console.WriteLine(test.IsMatch("ab", "?"));
-            Console.WriteLine(test.IsMatch("ab", "??"));
-            Console.WriteLine(test.IsMatch("ab", "???"));
-            Console.WriteLine(test.IsMatch("ab", "?a"));
-            Console.WriteLine(test.IsMatch("ab", "a?"));
-            Console.WriteLine(test.IsMatch("ab", "?b"));
-            Console.WriteLine(test.IsMatch("ab", "b?"));
-            Console.WriteLine(test.IsMatch("a", "?aa"));
-            Console.WriteLine(test.IsMatch("a", "a?a"));
-            Console.WriteLine(test.IsMatch("a", "aa?"));
-            Console.WriteLine(test.IsMatch("a", "?"));
-            Console.WriteLine(test.IsMatch("a", "??"));
-            Console.WriteLine(test.IsMatch("a", "???"));
-            Console.WriteLine(test.IsMatch("a", "?a"));
-            Console.WriteLine(test.IsMatch("a", "a?"));
-            Console.WriteLine(test.IsMatch("a", "?b"));
-            Console.WriteLine(test.IsMatch("a", "b?"));
-            // p longer than s
-            Console.WriteLine(test.IsMatch("a", "a*"));
-            Console.WriteLine(test.IsMatch("a", "a?"));
-            Console.WriteLine(test.IsMatch("a", "ab"));
+            //TheSkylineProblem sky = new TheSkylineProblem();
+            //sky.GetSkyline(builds);
 
-            // s longer than p            
-            Console.WriteLine(test.IsMatch("aaa", "a*"));
-            Console.WriteLine(test.IsMatch("aaa", "a?"));
-            Console.WriteLine(test.IsMatch("aaa", "a"));
-            
-            //other            
-            Console.WriteLine(test.IsMatch("adceb", "*a*b"));
-            Console.WriteLine(test.IsMatch("adceb", "***"));
-            Console.WriteLine(test.IsMatch("adceb", "?**"));
-            Console.WriteLine(test.IsMatch("adceb", "?*c"));
-            Console.WriteLine(test.IsMatch("acdcb", "a*c?b"));
+            ReorganizeStrings test = new ReorganizeStrings();
+            Console.WriteLine(test.ReorganizeString("aaab"));
 
             Console.ReadKey();
 

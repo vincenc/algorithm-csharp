@@ -6,7 +6,7 @@
  */
 using System.Linq;
 
-namespace algorithm_csharp.LeetCode.Array
+namespace algorithm_csharp
 {
     public class ReverseWordsInAStringII
     {

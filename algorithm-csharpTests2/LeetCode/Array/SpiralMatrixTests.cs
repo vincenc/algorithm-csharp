@@ -31,16 +31,20 @@ namespace algorithm_csharp.Tests
 
             var res = new List<object[]>();
 
-            int[][] a = new int[3][]
+            int[][] a = new int[6][]
                             {
-                                new int[] { 1,2,3 },
-                                new int[] { 4,5,6 },
-                                new int[] { 7,8,9 }
+                                new int[] { 1,2,3,4,5,6 },
+                                new int[] { 7,8,9,10,11,12 },
+                                new int[] { 13,14,15,16,17,18 },
+                                new int[] { 19,20,21,22,23,24 },
+                                new int[] { 25,26,27,28,29,30 },
+                                new int[] { 31,32,33,34,35,36 }
                             };
 
             int[][] c = new int[1][]
                             {
-                                new int[] { 1,2,3,6,9,8,7,4,5 }
+                                new int[] { 1,2,3,4,5,6,12,18,24,30,36,35,34,33,32,31,
+                                    25,19,13,7,8,9,10,11,17,23,29,28,27,26,20,14,15,16,22,21 }
                             };
 
             object[] b = new[] { a, c };
@@ -48,5 +52,6 @@ namespace algorithm_csharp.Tests
 
             return res;
         }
+        
     }
 }
